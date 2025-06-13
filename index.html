@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Game Dev Image Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reference Image Viewer</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
-  <div id="auth">
-    <div id="g_id_onload"
-         data-client_id="659934871827-o7gvshtrc4jo90gvuai376018r1mfdv5.apps.googleusercontent.com"
-         data-login_uri=""
-         data-auto_prompt="false">
-    </div>
-    <div class="g_id_signin" data-type="standard"></div>
-    <button id="signOutBtn" style="display:none">Sign Out</button>
-  </div>
-
-  <div id="content" style="display:none">
-    <h1>Welcome to Game Dev Image Tool</h1>
-    <button id="listImages">List Images</button>
-    <ul id="imageList"></ul>
-  </div>
+  <h1>Reference Image Viewer</h1>
+  <button onclick="listImages()">List Images</button>
+  <div id="imageContainer"></div>
 
   <script src="script.js"></script>
 </body>

@@ -1,16 +1,42 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
 }
 
 button {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-#imageList img {
-  width: 200px;
+button:hover {
+  background-color: #0056b3;
+}
+
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#imageContainer img {
+  width: 150px;
   height: auto;
-  margin: 10px;
-  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05);
 }
